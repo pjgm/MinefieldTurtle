@@ -11,19 +11,11 @@ namespace MinefieldTurtle.Entities
 		public MineField(int width, int height, IList<Point> mines, Point exit)
 		{
 			ValidateDimensions(width, height);
-
 			_grid = new FieldType[width, height];
-			var set = new HashSet<Point>();
 
 			foreach (var mine in mines)
 			{
 				ValidatePoint(mine);
-
-				if (!set.Add(mine))
-				{
-					throw new OverlappingMineException(mine.ToString());
-				}
-
 				SetMine(mine);
 			}
 

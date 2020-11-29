@@ -97,7 +97,7 @@ namespace MinefieldTurtle.UnitTests.Engine
 			_gameSettings.Mines.Add(new Point(3, 3));
 
 			// Act & Assert
-			Assert.Throws<OverlappingMineException>(() => new GameEngine(_gameSettings));
+			Assert.Throws<InvalidConfigurationException>(() => new GameEngine(_gameSettings));
 		}
 
 		[Fact]
