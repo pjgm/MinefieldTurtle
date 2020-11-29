@@ -1,0 +1,35 @@
+{
+  "MinefieldWidth": 50000,
+  "MinefieldHeight": 50000,
+  "TurtleDirection": "N",
+  "TurtlePosition": {
+    "X": 0,
+    "Y": 1
+  },
+  "Exit": {
+    "X": 5,
+    "Y": 5
+  },
+  "Mines": [
+    {
+      "X": 0,
+      "Y": 1
+    },
+    {
+      "X": 2,
+      "Y": 0
+    },
+    {
+      "X": 4,
+      "Y": 4
+    },
+    {
+      "X": 6,
+      "Y": 6
+    },
+    {
+      "X": 7,
+      "Y": 7
+    }
+  ]
+}
